@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">Dataentry ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Age</th>
+            <th scope="col">Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        {%for dataentries in dataentries%}
+        <tr>
+            <th scope="row"> {{dataentries.dataset_id}}</th>
+            <td>{{dataentries.dataentry_id}}</td>
+            <td>{{dataentries.date}}</td>
+            <td>{{dataentries.age}}</td>
+            <td>{{dataentries.gender}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
